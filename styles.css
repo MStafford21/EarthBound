@@ -141,23 +141,38 @@ footer {
 }
 
 /* Carousel */
-
 .carousel-img {
-    width: 80%;
-    margin: 0 auto;       
-    display: block;      
-    max-height: 500px;   
-    object-fit: cover;    
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
     border-radius: 10px;
 }
 
+.carousel-item {
+    text-align: center;
+}
+
+.carousel-item img {
+    max-height: 450px;   
+    width: auto;        
+}
+
+.carousel-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Carousel controls */
+
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: var(--pine);   
+    background-color: var(--pine);
     border-radius: 50%;
     width: 40px;
     height: 40px;
-    background-size: 60%;            
+    background-size: 60%;
     background-position: center;
 }
 
